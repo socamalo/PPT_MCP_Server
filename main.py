@@ -403,7 +403,9 @@ def close_presentation(presentation_id: str, save: bool = True) -> Dict[str, Any
     pres = ppt_automation.presentations[presentation_id]
     
     try:
-        pres.Close(save)
+        if save:
+            pres.Save()
+        pres.Close()
         del ppt_automation.presentations[presentation_id]
         return {"success": True}
     except Exception as e:
