@@ -846,5 +846,9 @@ def get_shape_type_name(type_id):
     }
     return shape_types.get(type_id, f"Unknown Type ({type_id})")
 
-if __name__ == "__main__":
+
+def main():
     mcp.run(transport="stdio")
+
+if __name__ == "__main__":
+    main()
