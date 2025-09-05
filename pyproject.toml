@@ -14,3 +14,4 @@ dependencies = [
 
 [project.scripts]
 mcp-ppt = "main:main"
+ppt-mcp = "main:main"
