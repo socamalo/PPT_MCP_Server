@@ -11,3 +11,6 @@ dependencies = [
     "pywin32>=310",
     "requests>=2.32.3",
 ]
+
+[project.scripts]
+mcp-ppt = "main:main"
