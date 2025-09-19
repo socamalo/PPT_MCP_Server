@@ -403,7 +403,9 @@ def close_presentation(presentation_id: str, save: bool = True) -> Dict[str, Any
     pres = ppt_automation.presentations[presentation_id]
     
     try:
-        pres.Close(save)
+        if save:
+            pres.Save()
+        pres.Close()
         del ppt_automation.presentations[presentation_id]
         return {"success": True}
     except Exception as e:
@@ -846,5 +848,9 @@ def get_shape_type_name(type_id):
     }
     return shape_types.get(type_id, f"Unknown Type ({type_id})")
 
-if __name__ == "__main__":
+
+def main():
     mcp.run(transport="stdio")
+
+if __name__ == "__main__":
+    main()

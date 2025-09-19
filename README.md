@@ -13,6 +13,12 @@ This project provides a PowerPoint automation server that works with Claude Desk
 - Set slide titles
 - And more!
 
+## Quick Start
+1. Use `uvx` to run:
+```bash
+uvx --from https://github.com/socamalo/PPT_MCP_Server.git mcp-ppt
+```
+
 ## Installation
 
 1. Clone this repository:
