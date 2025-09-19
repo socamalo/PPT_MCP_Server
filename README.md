@@ -1,3 +1,5 @@
+[![MseeP.ai Security Assessment Badge](https://mseep.net/pr/socamalo-ppt-mcp-server-badge.png)](https://mseep.ai/app/socamalo-ppt-mcp-server)
+
 # PowerPoint Automation MCP Server for Claude Desktop
 
 This project provides a PowerPoint automation server that works with Claude Desktop via the Model Control Protocol (MCP). It allows Claude to interact with Microsoft PowerPoint, enabling tasks like creating presentations, adding slides, modifying content, and more.
